@@ -42,7 +42,7 @@ export const getAccessTokenAdmin = async(req,res) =>{
           const accessToken = jwt.sign(
             safeAdminData,
             process.env.ACCESS_TOKEN_SECRET, // ⬅️ INI YANG PENTING
-            { expiresIn: "15m" }
+            { expiresIn: "30m" }
           );
 
 
