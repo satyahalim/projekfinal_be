@@ -12,7 +12,7 @@ const corsOptions = {
   origin: [
     "http://127.0.0.1:5500",
     "http://localhost:5500",
-    "https://fe-finalprojek-dot-xenon-axe-450704-n3.uc.r.appspot.com/"
+    "https://fe-finalprojek-dot-xenon-axe-450704-n3.uc.r.appspot.com"
     
     
     // Tambahkan localhost untuk pengembangan lokal
