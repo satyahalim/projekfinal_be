@@ -11,7 +11,9 @@ const app = express();
 const corsOptions = {
   origin: [
     "http://127.0.0.1:5500",
-    "http://localhost:5500" // Tambahkan localhost untuk pengembangan lokal
+    "http://localhost:5500",
+    "https://projekfinal-fe-dot-xenon-axe-450704-n3.uc.r.appspot.com"
+    // Tambahkan localhost untuk pengembangan lokal
     // url deploy frontend
   ],
   credentials: true, // Memungkinkan penggunaan cookies
