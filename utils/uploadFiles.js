@@ -7,7 +7,7 @@ const uploadToCloudServiceProfilePicture = async (filePath) => {
   try {
     // Upload ke Claudinary
     const result = await cloudinary.uploader.upload(filePath, {
-      folder: process.env.CLOUDINARY_FOLDER, // opsional: nama folder di Cloudinary
+      folder:process.env.CLOUDINARY_FOLDER, // opsional: nama folder di Cloudinary
     });
 
     const optimizeUrl = cloudinary.url(result.public_id, {
