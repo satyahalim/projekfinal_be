@@ -1,10 +1,9 @@
 import express from "express";
 import { verifyToken }from "../middleware/VerifyToken.js";
 import multer from "multer";
-import storage from "../utils/storage.js";
-const upload = multer({ storage: storage });
 import {createEvent,getEvents,deleteEvent,updateEvent,getEventById} from "../controller/EventController.js"
 
+const upload = multer({ dest: "uploads/" });
 const router = express.Router()
 
 router.get("/event", getEvents);
