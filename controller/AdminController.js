@@ -1,6 +1,9 @@
 import Admin from "../models/AdminModel.js"
 import bcrypt from "bcrypt"
 import jwt from "jsonwebtoken"
+import dotenv from "dotenv";
+dotenv.config();
+
 
 async function getAdmin(req,res) {
     try {
